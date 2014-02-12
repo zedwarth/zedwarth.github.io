@@ -1,0 +1,63 @@
+---
+layout: post
+title:  "The cat, the lolcat, and the pipe"
+date:   2014-02-11 18:15:20
+---
+
+# cat
+
+Let's talk about `cat`.  It's this nice little Unix program for those of use that are inpatient,i.e., all of us.
+
+Here's a scenario for you.  You're in your terminal and you want to know what's in that gem file.
+
+```
+>ls
+CNAME        Gemfile.lock _layouts     _site        index.html
+Gemfile      _config.yml  _posts       css
+```
+
+And you're like, "I'll just open this up in Sublime!" (Or MacVim, or ~~Word~~)
+
+But fuck that shit!  You're in the terminal! And having to wait while a new Sublime window opens is time you don't have. Besides, you're not interested in editing the file, you're just trying to see what's in it.
+
+So, `cat` that bitch!
+
+```
+>cat Gemfile
+source 'https://rubygems.org'
+gem 'github-pages'
+```
+
+Boom!  You've just saved milliseconds of time!  Pretty awesome, right!
+
+Tots.  But we can do better.  We can do `lolcat`.
+
+# lolcat
+
+[lolcat](https://github.com/busyloop/lolcat) is this great gem that takes the `cat` command and dips it into a god damn rainbow.
+
+How do you get the rainbow?
+
+```
+gem install lolcat
+```
+
+Now, run `lolcat Gemfile`, but put on some sunglasses first.
+
+But having to type `lolcat` is twice as long as typing `cat`.  
+
+Let's do something about that.
+
+Pull up your editor of choice and open `~/.zshrc` and add this line. `alias cat="lolcat"`  Now when ever you type `cat` your computer will know you really mean, `lolcat`.
+
+# Rainbow Everything!
+
+Remember that `gem install lolcat` command?  Well `gem`, the command, is a program that downloads and instals Ruby gems, packaged Ruby programs.  It's good to update your gems every once in a while be running `gem update`.  But that output boring monochromatic text!
+
+Not any more it doesn't!
+
+`gem update | cat` will take the output of `gem update` and pipe it into `cat`.
+
+The best part is that you can pipe the text output of literally any terminal command just by appending with `| cat`.  
+
+Your welcome.  Keep reaching for that rainbow friends.
