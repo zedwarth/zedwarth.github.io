@@ -6,15 +6,21 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 
+        <!-- Normalize and Foundation CSS -->
+				<link rel="stylesheet" href="/css/normalize.css">
+				<link rel="stylesheet" href="/css/foundation.css">
+
         <!-- syntax highlighting CSS -->
         <link rel="stylesheet" href="/css/syntax.css">
 
-        <!-- Custom CSS -->
+        <!-- Custom CSS 
         <link rel="stylesheet" href="/css/main.css">
+-->
 
     </head>
     <body>
 
+		{% include header.html %}
         <div class="site">
           <div class="header">
             <h1 class="title"><a href="/">{{ site.name }}</a></h1>
@@ -33,8 +39,8 @@
             </div>
             <div class="contact">
               <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
+                <a href="https://github.com/zedwarth">github.com/zedwarth</a><br />
+                <a href="https://twitter.com/zedwarth">twitter.com/zedwarth</a><br />
               </p>
             </div>
           </div>
