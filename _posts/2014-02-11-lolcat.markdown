@@ -60,4 +60,4 @@ Not any more it doesn't!
 
 The best part is that you can pipe the text output of literally any terminal command just by appending with `| cat`.  
 
-Your welcome.  Keep reaching for that rainbow friends.
+Your welcome.  Keep reaching for that rainbow, friends.
