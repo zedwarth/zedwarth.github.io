@@ -23,13 +23,19 @@
     </head>
     <body>
 
-		{% include header.html %}
-        <div class="site">
+			{% include header.html %}
+			<div class="site">
           
-          {{ content }}
+				{{ content }}
 
-				</div>
+			</div>
 
-				<script src="/js/foundation.min.js"></script>
+
+			<script scr="/js/vendor/jquery.js"></script>
+			<script src="/js/vendor/fastclick.js"></script>
+			<script src="/js/foundation.min.js"></script>
+			<script>
+				$(document).foundation();
+			</script>
     </body>
 </html>
